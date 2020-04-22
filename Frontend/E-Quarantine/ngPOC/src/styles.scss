@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap";
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.border-box
+{
+    border: 1px solid #25b4d4;
+    padding: 36px;
+}
+
+.navbar
+{
+    background-color: #343a40;
+}
+
+.navbar a{
+    
+    color: whitesmoke;
+}
+
+.container
+{
+    margin: 50px 0 50px 0;
+}
+
+#sidebar-wrapper
+{
+    min-width: 180px !important;
+}
+
+// a.bg-light
+// {
+//     color: whitesmoke;
+//     background-color: #17a2b8!important;
+// }
+
+#page-content-wrapper
+{
+    min-height: 460px;
+}

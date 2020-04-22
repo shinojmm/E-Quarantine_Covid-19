@@ -1,0 +1,19 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="list-group list-group-flush">
+            <a [routerLink]="['dashboard']" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+            <a [routerLink]="['map']" class="list-group-item list-group-item-action bg-light">Map</a>
+            <a [routerLink]="['update']" class="list-group-item list-group-item-action bg-light">Daily Monitor</a>
+            <a [routerLink]="['get-help']" class="list-group-item list-group-item-action bg-light">Get Help</a>
+            <a [routerLink]="['consult']" class="list-group-item list-group-item-action bg-light">Consult Doctor</a>
+            <a [routerLink]="['progress']" class="list-group-item list-group-item-action bg-light">Know Your Progress</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <router-outlet></router-outlet>
+    <!-- /#page-content-wrapper -->
+
+</div>

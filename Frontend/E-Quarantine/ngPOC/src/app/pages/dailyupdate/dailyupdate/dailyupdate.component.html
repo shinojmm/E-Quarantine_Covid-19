@@ -1,0 +1,55 @@
+<div class="container">
+  <h3 class="header">Please enter your Today's Progress</h3>
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-12">
+      <form [formGroup]="dailyForm">
+        <div class="form-group">
+          <label>Today's body Temperature</label>
+          <input type="text" formControlName="temperature" class="form-control">
+          <div *ngIf="submitted && f.temperature.errors">
+            <div *ngIf="f.temperature.errors.required" class="alert-danger">Temperature is Required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Note</label>
+          <input type="text" class="form-control" formControlName="dailynote">
+          <div *ngIf="submitted && f.dailynote.errors">
+            <div *ngIf="f.dailynote.errors.required" class="alert-danger">Notes is Required</div>
+          </div>
+        </div>
+        <button type="submit" (click)="onClickMe(dailyForm.value)" class="btn btn-info btn-md">Submit</button>
+        <label class="success">{{successMessage}}</label>
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <table id="customers">
+            <tr>
+              <th>Day</th>
+              <th>Temperature</th>
+              <th>Notes</th>
+            </tr>
+            <tr>
+              <td>Day 1</td>
+              <td>60 °C</td>
+              <td>Body pain. Having Head ache</td>
+            </tr>
+            <tr>
+              <td>Day 2</td>
+              <td>70 °C</td>
+              <td>Body pain. Not getting proper sleep</td>
+            </tr>
+            <tr>
+              <td>Day 3</td>
+              <td>60 °C</td>
+              <td>Breathing Problem</td>
+            </tr>
+            <tr>
+              <td>Day 4</td>
+              <td>60 °C</td>
+              <td>Eye pain. Body pain.</td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
