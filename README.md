@@ -10,13 +10,13 @@ This fact based information will help in predictive analysis and scientific stud
 
 Quarantine patients can register in to the website. Enter the details including Postal code.
 Specific set of questions to capture the Covid-19 symptoms.
-Daily progress monitor to capture health improvements
-Analysis report based on age groups, Geo locations, avg . Quarantine time, healing time
+Daily progress monitor to capture health improvements.
+Analysis report based on age groups, Geo locations, avg . Quarantine time, healing time.
 Admin user option.
 
 # Future Scope
 
-Video chat with Doctor
+Video chat with Doctor.
 Panic alarm to near by Hospitals
 
 
